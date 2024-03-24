@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.square {
+    margin: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #1d1d1d;
+    transition: 1.5s ease-in-out;
+}
+
+.squareSnake {
+    margin: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #1d1d1d;
+    transition: 1.5s ease-in-out;
+    transition-duration: 0s;
+}
+
+.square:hover {
+    transition-duration: 0s;
+}
